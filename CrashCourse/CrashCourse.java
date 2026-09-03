@@ -39,5 +39,36 @@ public class CrashCourse{
         System.out.println(e && f); //false
         System.out.println(e || f); //true
         System.out.println(e || f && !e); //true
+
+        //casting (converting)
+        int g = (int)5.5;
+        System.out.println(g);
+        double h = (double)5/6;
+        System.out.println(h);
+
+        //strings
+        String s1 = "Goodnight";String s2 = " and ";String s3 = "goodbye";
+        String result = s1+s2+s3;
+        System.out.println(result);
+        result += "Cowboy.";
+        System.out.println(result + "\n");
+
+        //arrays
+        int[] arry1 = new int[10];
+        System.out.println(arry1);
+        System.out.println("length of arry1 = " + arry1.length);
+
+        arry1[0] = 1;
+        arry1[1] = 2;
+        arry1[2] = 3;
+
+        System.out.println("Remainder = " + arry1[0] % arry1[1]);
+
+        int[] arry2 = {1,2,3,4,5,6,7,8,9,0};
+
+        //2D arrays
+        int[][] arryGrid1 = new int[4][3];
+        System.out.println(arryGrid1.length);
+        System.out.println(arryGrid1[0].length);
     }
 }
