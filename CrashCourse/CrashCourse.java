@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class CrashCourse{
     public static void main(String[] args){
 
@@ -70,5 +72,22 @@ public class CrashCourse{
         int[][] arryGrid1 = new int[4][3];
         System.out.println(arryGrid1.length);
         System.out.println(arryGrid1[0].length);
+
+        int[][] arryGrid2 = {{7,8,9},{4,5,6},{1,2,3}};
+
+        System.out.println(arryGrid2[0][1]);
+        System.out.println(arryGrid2[2][2]);
+
+        //ArrayList - imported package, can be any size, lots of built in functions
+        //Avoid primitive data types. there are special classes for ints, doiubles, bools and strings, they are called "wrapper classes"
+
+        ArrayList<String> arryLst = new ArrayList<>();
+        arryLst.add("Word 1")
+        arryLst.add("Word 2")
+        arryLst.add("Word 3")
+        arryLst.add("Word 4")
+        arryLst.remove(0)
+        arryLst.add(0,"Word 1")
+        System.out.println(arryLst.size());
     }
 }
