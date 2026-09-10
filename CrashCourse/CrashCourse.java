@@ -82,12 +82,71 @@ public class CrashCourse{
         //Avoid primitive data types. there are special classes for ints, doiubles, bools and strings, they are called "wrapper classes"
 
         ArrayList<String> arryLst = new ArrayList<>();
-        arryLst.add("Word 1")
-        arryLst.add("Word 2")
-        arryLst.add("Word 3")
-        arryLst.add("Word 4")
-        arryLst.remove(0)
-        arryLst.add(0,"Word 1")
+        arryLst.add("Word 1");
+        arryLst.add("Word 2");
+        arryLst.add("Word 3");
+        arryLst.add("Word 4");
+        arryLst.remove(0);
+        arryLst.add(0,"Word 1");
         System.out.println(arryLst.size());
+
+        //conditionals
+        boolean tru = true;
+        boolean fal = false;
+        if(fal) {
+            System.out.println("Reached TRUE");
+        } 
+        
+        else if (!fal){
+            System.out.println("Reached ELIF");
+        }
+
+        else {
+            System.out.println("Reached ELSE statement");
+        }
+
+        //iteration
+
+        int x = 5;
+
+        while (x<10) {
+            System.out.println(x+" ");
+            x++;
+        }
+        System.err.println();
+
+        //for loop - init variable (for index); conditional; incriment/decriment value 
+        for(int i = 0; i < 5; i++) {
+            System.err.println(i);
+        }
+
+        //enhanced for loop (only for reading values)
+        ArrayList<String> animals = new ArrayList<>();
+        animals.add("Sheep");
+        animals.add("Deer");
+        animals.add("Moose");
+
+        System.out.println("ArrayList: "+animals);
+
+        for (String s : animals){
+            System.out.println(s);
+        }
+
+        //printing values of an array using iteration
+        double[] arry = {5.1,2.2,5.3,3.4,8.5};
+        System.err.println("arry memory address is: "+arry);
+
+        for (int i = 0;i < arry.length; i++) {
+            System.err.println(arry[i]);
+        }
+
+        int[][] arryMatrix = {{0,32,12},{7,13,22},{6,77,100}};
+
+        for(int row = 0;row<arryMatrix.length;row++) {
+            for (int col = 0;col<arryMatrix[row].length;col++){
+                System.out.println(arryMatrix[row][col]);
+            }
+        }
+        System.out.println();
     }
 }
