@@ -1,11 +1,11 @@
 public class Classmate {
-    String charecterName;
+    private String charecterName;
     boolean isWorking;
     int attentionLevel;
     int energyLevel = 100;
     int stressLevel = 0;
-    double GPA;
-    double multiplier = 1.0;
+    private double GPA;
+    public double multiplier = 1.0;
 
     public Classmate(String charecterName, boolean isWorking, double GPA){
         this.charecterName = charecterName;
