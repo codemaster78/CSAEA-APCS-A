@@ -26,15 +26,26 @@ public class Dog {
 
     public void eat(){
         isHungry = false;
-        energyLevel += 10
+        energyLevel += 10;
         weight += 1;
 
         if (energyLevel>100){
             energyLevel = 100;
         }
+        else if(energyLevel<100){
+            energyLevel = 0;
+        }
+        System.out.println("Energy: "+energyLevel);
     }
 
     public void walk(){
         energyLevel -= 10;
+        System.out.println("Energy: "+energyLevel);
+        if (energyLevel>100){
+            energyLevel = 100;
+        }
+        else if(energyLevel<100){
+            energyLevel = 0;
+        }
     }
 }
