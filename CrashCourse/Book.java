@@ -7,7 +7,7 @@ public class Book {
     public double price;
     private int VolNum;
 
-    public Book(String Subject, boolean Fiction, double price){
+    public Book(String Subject, boolean Fiction, double price, int PageCt, int ChapCt){
         this.Subject = Subject;
         this.Fiction = Fiction;
         this.price = price;
@@ -28,7 +28,7 @@ public class Book {
     }
 
     public void bookInfo(){
-        System.out.println("Subject: "+Subject+"\nPage Count: "+PageCt+"\nIs Fiction: "+Fiction+"\nChapter Count: "+ChapCt+"\nCurrent Page: "+CurrentPage+"\nPrice: "+price+"Volume Number: "+VolNum);
+        System.out.println("Subject: "+Subject+"\nPage Count: "+PageCt+"\nIs Fiction: "+Fiction+"\nChapter Count: "+ChapCt+"\nCurrent Page: "+CurrentPage+"\nPrice: "+price+"\nVolume Number: "+VolNum+"\n");
     }
 
     public void discount(double percentage){
@@ -36,5 +36,9 @@ public class Book {
         System.out.println("Price "+price+" -> "+(price*percentage/100));
         price*=(percentage/100);
         
+    }
+    public void setPageCount(int count){
+        PageCt = count;
+        System.out.println("Page Count: "+count);
     }
 }
