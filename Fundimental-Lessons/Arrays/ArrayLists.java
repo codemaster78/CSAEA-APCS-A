@@ -132,7 +132,7 @@ public class ArrayLists {
      * Hint:    you need TWO loops -- you can't compare to the average until you've seen every name
      *
 */
-public static void longNames(ArrayList<String> animals){
+public static ArrayList<String> longNames(ArrayList<String> animals){
     int count = 0;
 
     String max = animals.get(0);
@@ -147,5 +147,7 @@ public static void longNames(ArrayList<String> animals){
     for (String i:animals){
         if (i.length()>avg){newanimals.add(i);}
     }
+    System.out.println("average: "+avg+"Hasfrog: "+glassfrog+"longest: "+max);
+    return newanimals;
 }
 }
