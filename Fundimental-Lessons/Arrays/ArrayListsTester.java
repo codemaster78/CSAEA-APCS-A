@@ -7,12 +7,14 @@ public class ArrayListsTester {
     public static void main(String[] args) {
 
         ArrayList<String> animals = ArrayLists.createList();
-        System.out.println(animals);
+    // * ===== CHECKPOINT 1: Searching and Modifying =====
+    //      * CHALLENGE:
+    //      * Write replaceAll(ArrayList<String> list, String oldVal, String newVal) that replaces
+    //      * EVERY match, not just the first.
+    //      * Example: ["cat", "dog", "cat"], replace "cat" with "fox"  ->  [fox, dog, fox]
+    //      * Tools:   for loop with index i, size(), get(i), set(i, obj), .equals()
 
-        ArrayLists.showIndex(animals);
-
-        int index = ArrayLists.findIndex(animals, "blobfish");
-        System.out.println(index);
-
+        ArrayLists.membershipCheck();
+        ArrayLists.copyList();
     }
 }
